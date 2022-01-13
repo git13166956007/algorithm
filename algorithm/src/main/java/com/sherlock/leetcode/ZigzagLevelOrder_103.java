@@ -7,7 +7,7 @@ import java.util.*;
  * @date 2022/1/6 9:42
  * @describe 二叉树的锯齿形层序遍历
  */
-public class ZigZagLevelOrder {
+public class ZigzagLevelOrder_103 {
 
     /**
      * 给定一个二叉树，返回其节点值的锯齿形层序遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。
@@ -84,8 +84,8 @@ public class ZigZagLevelOrder {
 
         TreeNode node1 = new TreeNode(3,node2,node3);
 
-        ZigZagLevelOrder zigZagLevelOrder  = new ZigZagLevelOrder();
-        List<List<Integer>> lists = zigZagLevelOrder.zigzagLevelOrder(node1);
+        ZigzagLevelOrder_103 zigzagLevelOrder103 = new ZigzagLevelOrder_103();
+        List<List<Integer>> lists = zigzagLevelOrder103.zigzagLevelOrder(node1);
         System.out.println(lists.size());
     }
 }

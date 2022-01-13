@@ -5,7 +5,7 @@ package com.sherlock.leetcode;
  * @date 2022/1/5 15:28
  * @describe 数组中的第K个最大元素
  */
-public class FindKthLargest {
+public class FindKthLargest_215 {
 
     //首先需要进行排序(直接倒叙排列)
     //然后找出第K个元素即可 3,2,3,1,2,4,5,5,6  1,2,2,3,3,4,5,5,6
@@ -37,7 +37,7 @@ public class FindKthLargest {
 //        int[] nums = {3,2,3,1,2,4,5,5,6};
         int[] nums = {3,2,1,5,6,4};
         int k = 2;
-        FindKthLargest kthLargest = new FindKthLargest();
+        FindKthLargest_215 kthLargest = new FindKthLargest_215();
         int kthLargest1 = kthLargest.findKthLargest(nums, k);
         System.out.println(kthLargest1);
     }

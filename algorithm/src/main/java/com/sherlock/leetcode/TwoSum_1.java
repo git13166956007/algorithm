@@ -23,7 +23,7 @@ import java.util.Map;
  * @version 1.0
  * @since <pre>2017/12/20 22:49</pre>
  */
-public class TwoSum {
+public class TwoSum_1 {
 
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -49,8 +49,8 @@ public class TwoSum {
     public static void main(String[] args) {
         int[] nums = new int[]{2,7,11,15};
         int target = 9;
-        TwoSum twoSum = new TwoSum();
-        int[] ints = twoSum.twoSum(nums, target);
+        TwoSum_1 twoSum1 = new TwoSum_1();
+        int[] ints = twoSum1.twoSum(nums, target);
         System.out.println(ints);
     }
 }

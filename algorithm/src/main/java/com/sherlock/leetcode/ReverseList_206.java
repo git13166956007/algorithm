@@ -5,7 +5,7 @@ package com.sherlock.leetcode;
  * @date 2021/12/27 17:10
  * @describe
  */
-public class ReverseList {
+public class ReverseList_206 {
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
@@ -18,7 +18,7 @@ public class ReverseList {
         ListNode node5 = new ListNode(5);
         node4.next = node5;
 //        ListNode node = reverseList.reverseList(node1);
-        ListNode node = ReverseList.iteratorReverseList(node1);
+        ListNode node = ReverseList_206.iteratorReverseList(node1);
         System.out.println(node);
 
     }

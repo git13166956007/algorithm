@@ -19,7 +19,7 @@ import java.util.*;
  * 链接：https://leetcode-cn.com/problems/3sum
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class ThreeSum {
+public class ThreeSum_15 {
 
 //    /**
 //     * 暴力搜索解法
@@ -108,8 +108,8 @@ public class ThreeSum {
     public static void main(String[] args) {
         int[] nums = new int[]{-1,0,1,2,-1,-4};
         long currentTimeMillis = System.currentTimeMillis();
-        ThreeSum threeSum = new ThreeSum();
-        List<List<Integer>> lists = threeSum.threeSum(nums);
+        ThreeSum_15 threeSum15 = new ThreeSum_15();
+        List<List<Integer>> lists = threeSum15.threeSum(nums);
         System.out.println("花费:"+(System.currentTimeMillis()-currentTimeMillis) +" 毫秒");
         System.out.println(lists);
     }

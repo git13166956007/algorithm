@@ -5,7 +5,7 @@ package com.sherlock.leetcode;
  * @date 2022/1/6 18:10
  * @describe 121 买卖股票的最佳时机 买一次 卖一次
  */
-public class MaxProfit {
+public class MaxProfit_121 {
 
     /**
      * 只需要江
@@ -30,8 +30,8 @@ public class MaxProfit {
     }
 
     public static void main(String[] args) {
-        MaxProfit maxProfit = new MaxProfit();
-        int i = maxProfit.maxProfit(new int[]{7, 1, 5, 3, 6, 4});
+        MaxProfit_121 maxProfit121 = new MaxProfit_121();
+        int i = maxProfit121.maxProfit(new int[]{7, 1, 5, 3, 6, 4});
         System.out.println(i);
     }
 }

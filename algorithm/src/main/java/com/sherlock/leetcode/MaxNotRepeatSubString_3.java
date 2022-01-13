@@ -8,9 +8,9 @@ import java.util.PriorityQueue;
 /**
  * @author Sherlock
  * @date 2021/12/27 9:57
- * @describe 无重复字符最长子串(连续)
+ * @describe 3 无重复字符最长子串(连续)
  */
-public class MaxNotRepeatSubString {
+public class MaxNotRepeatSubString_3 {
 
     public static void main(String[] args) {
 //        String str = "abcabcbb";

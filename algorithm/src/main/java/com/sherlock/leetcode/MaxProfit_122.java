@@ -5,7 +5,7 @@ package com.sherlock.leetcode;
  * @date 2022/1/7 11:49
  * @describe 买股票的最佳时机II 可以买卖多次 ,但手里持有时无法买入
  */
-public class MaxProfit2 {
+public class MaxProfit_122 {
 
     public int maxProfit(int[] prices) {
 
@@ -23,8 +23,8 @@ public class MaxProfit2 {
 
     public static void main(String[] args) {
         int[] prices = new int[]{7,1,5,3,6,4};
-        MaxProfit2 maxProfit2 = new MaxProfit2();
-        int i = maxProfit2.maxProfit(prices);
+        MaxProfit_122 maxProfit122 = new MaxProfit_122();
+        int i = maxProfit122.maxProfit(prices);
         System.out.println(i);
     }
 }

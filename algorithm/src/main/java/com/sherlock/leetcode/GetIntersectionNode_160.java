@@ -5,7 +5,7 @@ package com.sherlock.leetcode;
  * @date 2022/1/10 16:22
  * @describe 相交链表
  */
-public class GetIntersectionNode {
+public class GetIntersectionNode_160 {
     /**
      *
      * @param headA 4,1,8,4,5
@@ -51,8 +51,8 @@ public class GetIntersectionNode {
         ListNode node11 = new ListNode(5);
         node10.next = node11;
 
-        GetIntersectionNode getIntersectionNode = new GetIntersectionNode();
-        ListNode intersectionNode = getIntersectionNode.getIntersectionNode(node1, node6);
+        GetIntersectionNode_160 getIntersectionNode160 = new GetIntersectionNode_160();
+        ListNode intersectionNode = getIntersectionNode160.getIntersectionNode(node1, node6);
         System.out.println(intersectionNode.val);
 
     }

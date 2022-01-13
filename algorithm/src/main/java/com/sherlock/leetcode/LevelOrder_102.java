@@ -10,7 +10,7 @@ import java.util.Queue;
  * @date 2022/1/6 11:02
  * @describe 二叉树的层序遍历
  */
-public class LevelOrder {
+public class LevelOrder_102 {
 
     /**
      *  层序遍历不同于先序遍历 中序遍历 后序遍历 ,就是每一层从左到右进行遍历
@@ -53,8 +53,8 @@ public class LevelOrder {
 
         TreeNode node1 = new TreeNode(3,node2,node3);
 
-        LevelOrder levelOrder  = new LevelOrder();
-        List<List<Integer>> lists = levelOrder.levelOrder(node1);
+        LevelOrder_102 levelOrder102 = new LevelOrder_102();
+        List<List<Integer>> lists = levelOrder102.levelOrder(node1);
         System.out.println(lists.size());
     }
 

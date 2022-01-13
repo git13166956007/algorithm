@@ -7,7 +7,7 @@ import java.util.List;
  * @date 2021/12/28 9:39
  * @describe
  */
-public class ReverseList2 {
+public class ReverseList_92 {
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
