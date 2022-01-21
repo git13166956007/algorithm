@@ -2,7 +2,6 @@ package com.sherlock.leetcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * Created by Sherlock on 2022/1/20 21:26
@@ -10,11 +9,11 @@ import java.util.Stack;
  * @Version 1.0
  * @Note
  */
-public class CQueue {
+public class CQueue_offer_09 {
 
     private final Deque<Integer> firstStack;
     private final Deque<Integer> lastStack;
-    public CQueue(){
+    public CQueue_offer_09(){
         firstStack = new LinkedList<>();
         lastStack = new LinkedList<>();
     }
@@ -37,13 +36,14 @@ public class CQueue {
 
 
     public static void main(String[] args) {
-        CQueue cQueue = new CQueue();
-        cQueue.appendTail(1);
-        cQueue.appendTail(2);
-        cQueue.appendTail(3);
-        cQueue.deleteHead();cQueue.deleteHead();
-        cQueue.deleteHead();
-        int i = cQueue.deleteHead();
+        CQueue_offer_09 cQueueOffer09 = new CQueue_offer_09();
+        cQueueOffer09.appendTail(1);
+        cQueueOffer09.appendTail(2);
+        cQueueOffer09.appendTail(3);
+        cQueueOffer09.deleteHead();
+        cQueueOffer09.deleteHead();
+        cQueueOffer09.deleteHead();
+        int i = cQueueOffer09.deleteHead();
         System.out.println(i);
     }
 }

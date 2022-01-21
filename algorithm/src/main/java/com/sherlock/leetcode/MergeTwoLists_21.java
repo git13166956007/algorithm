@@ -34,6 +34,29 @@ public class MergeTwoLists_21 {
     }
 
 
+    public ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
+        ListNode listNode = new ListNode();
+        ListNode currentNode = listNode;
+        while (list1!=null&&list2!=null){
+            if (list1.val<list2.val){
+                currentNode.next = list1;
+                list1 = list1.next;
+                currentNode = currentNode.next;
+            }else{
+                currentNode.next = list2;
+                currentNode = currentNode.next;
+                list2 = list2.next;
+            }
+        }
+        if (list1==null){
+            currentNode.next = list2;
+        }else {
+            currentNode.next = list1;
+        }
+        return listNode.next;
+    }
+
+
       static class ListNode {
       int val;
       ListNode next;
@@ -55,7 +78,7 @@ public class MergeTwoLists_21 {
         listNode11.next = listNode33;
         ListNode listNode44 = new ListNode(4);
         listNode33.next = listNode44;
-        ListNode listNode = mergeTwoLists_21.mergeTwoLists(listNode1, listNode11);
+        ListNode listNode = mergeTwoLists_21.mergeTwoLists2(listNode1, listNode11);
         System.out.println(listNode);
     }
 }
