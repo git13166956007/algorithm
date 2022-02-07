@@ -1,5 +1,6 @@
 package com.sherlock.leetcode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,6 +27,22 @@ import java.util.Map;
 public class TwoSum_1 {
 
     public int[] twoSum(int[] nums, int target) {
+
+
+        Arrays.sort(nums);
+        int len = nums.length;
+        int low = 0;
+        int high = len - 1;
+        while (low<high){
+            if (nums[low]+nums[high]>target){
+                high--;
+            }else if (nums[low]+nums[high]<target){
+                low++;
+            }else {
+                return new int[]{low,high};
+            }
+        }
+
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target-nums[i])){

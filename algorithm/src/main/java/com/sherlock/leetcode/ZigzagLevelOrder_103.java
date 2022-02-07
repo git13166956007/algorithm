@@ -31,12 +31,11 @@ public class ZigzagLevelOrder_103 {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null){
-            return null;
+            return result;
         }
         Queue<TreeNode> nodeQueue = new LinkedList<>();
         nodeQueue.offer(root);
         int flag = 0;
-
         while (!nodeQueue.isEmpty()) {
             Deque<Integer> levelList = new LinkedList<>();
             int size = nodeQueue.size();
@@ -87,5 +86,11 @@ public class ZigzagLevelOrder_103 {
         ZigzagLevelOrder_103 zigzagLevelOrder103 = new ZigzagLevelOrder_103();
         List<List<Integer>> lists = zigzagLevelOrder103.zigzagLevelOrder(node1);
         System.out.println(lists.size());
+
+        System.out.println("5%2="+5%2);
+        System.out.println("5/2="+5/2);
+        System.out.println("5&2="+(5&2));
+        System.out.println("5|2="+(5|2));
+        System.out.println("5^2="+(5^2));
     }
 }

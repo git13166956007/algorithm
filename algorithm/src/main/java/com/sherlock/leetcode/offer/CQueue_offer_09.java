@@ -1,4 +1,4 @@
-package com.sherlock.leetcode;
+package com.sherlock.leetcode.offer;
 
 import java.util.Deque;
 import java.util.LinkedList;

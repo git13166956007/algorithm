@@ -1,9 +1,6 @@
-package com.sherlock.leetcode;
+package com.sherlock.leetcode.offer;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
 
 /**
  * @author Sherlock
