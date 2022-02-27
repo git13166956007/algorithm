@@ -7,6 +7,13 @@ package com.sherlock.leetcode;
  */
 public class LowestCommonAncestor_236 {
 
+    /**
+     *  普通二叉树
+     * @param root
+     * @param p
+     * @param q
+     * @return
+     */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root==null || p == root || q == root){
             return root;
@@ -15,6 +22,9 @@ public class LowestCommonAncestor_236 {
         TreeNode leftNode = lowestCommonAncestor(root.left, p, q);
         TreeNode rightNode = lowestCommonAncestor(root.right, p, q);
 
+        if (leftNode != null && rightNode != null) {
+            return root;
+        }
         if (leftNode!=null){
             return leftNode;
         }

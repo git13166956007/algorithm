@@ -49,9 +49,9 @@ public class SpiralOrder_54 {
 
     public static void main(String[] args) {
         int [][] matrix = new int[][]{
-                {1,2,3},
-                {4,5,6},
-                {7,8,9}
+                {2,5},
+                {8,4},
+                {0,-1}
         };
         SpiralOrder_54 spiralOrder_54 = new SpiralOrder_54();
         List<Integer> list = spiralOrder_54.spiralOrder(matrix);
