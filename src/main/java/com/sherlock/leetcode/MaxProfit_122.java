@@ -8,20 +8,21 @@ package com.sherlock.leetcode;
 public class MaxProfit_122 {
 
     public int maxProfit(int[] prices) {
-        int currMin = prices[0];
-        int max = 0;
-        for (int price : prices) {
-            if (0 < price - currMin) {
-                max = Math.max(max, max + price - currMin);
+
+        //记录最大收益
+        int maxProfit = 0;
+        for (int i = 0; i < prices.length-1; i++) {
+
+            if (prices[i]<prices[i+1]){
+                maxProfit += prices[i+1]-prices[i];
             }
-            currMin = price;
         }
-        return max;
+        return maxProfit;
     }
 
 
     public static void main(String[] args) {
-        int[] prices = new int[]{1,2,3,4,5};
+        int[] prices = new int[]{7,1,5,3,6,4};
         MaxProfit_122 maxProfit122 = new MaxProfit_122();
         int i = maxProfit122.maxProfit(prices);
         System.out.println(i);

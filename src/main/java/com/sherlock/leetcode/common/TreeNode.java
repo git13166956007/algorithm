@@ -1,5 +1,7 @@
 package com.sherlock.leetcode.common;
 
+import com.sherlock.leetcode.offer.MaxDepth_offer_55_1;
+
 /**
  * @author Sherlock
  * @date 2022/2/14 16:05
@@ -10,14 +12,7 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
-    public TreeNode(){}
-    public TreeNode(int val){
-        this.val = val;
-    }
-
-    public TreeNode(int val,TreeNode left,TreeNode right){
-        this.val = val;
-        this.left = left;
-        this.right = right;
+    public TreeNode(int x){
+        val = x;
     }
 }

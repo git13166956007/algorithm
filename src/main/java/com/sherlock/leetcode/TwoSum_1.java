@@ -1,6 +1,8 @@
 package com.sherlock.leetcode;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * https://leetcode.com/problems/two-sum/description/
@@ -61,24 +63,11 @@ public class TwoSum_1 {
     }
 
 
-    public int[] test(int[] nums, int target){
-        int length = nums.length;
-        List<Integer> list = new ArrayList<>(length);
-        for(int i= 0;i<length ;i++){
-            if (list.contains(target-nums[i])){
-                return new int[]{list.indexOf(target-nums[i]),i};
-            }else {
-                list.add(nums[i]);
-            }
-        }
-        return new int[]{};
-    }
-
     public static void main(String[] args) {
-        int[] nums = new int[]{3,3};
-        int target = 6;
+        int[] nums = new int[]{2,7,11,15};
+        int target = 9;
         TwoSum_1 twoSum1 = new TwoSum_1();
-        int[] ints = twoSum1.test(nums, target);
+        int[] ints = twoSum1.twoSum(nums, target);
         System.out.println(ints);
     }
 }

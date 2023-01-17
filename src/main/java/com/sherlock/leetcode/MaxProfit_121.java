@@ -4,18 +4,6 @@ package com.sherlock.leetcode;
  * @author Sherlock
  * @date 2022/1/6 18:10
  * @describe 121 买卖股票的最佳时机 买一次 卖一次
- *
- * 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
- *
- * 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
- *
- * 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
- *
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- *
- *
  */
 public class MaxProfit_121 {
 
@@ -41,23 +29,9 @@ public class MaxProfit_121 {
         return maxProfit;
     }
 
-    public int maxProfitII(int[] prices){
-        int max = 0;
-        int minPrice = prices[0];
-        for (int price : prices) {
-            if (price < minPrice) {
-                minPrice = price;
-            } else if (price - minPrice > max) {
-                max = price - minPrice;
-            }
-        }
-        return max;
-    }
-
-
     public static void main(String[] args) {
         MaxProfit_121 maxProfit121 = new MaxProfit_121();
-        int i = maxProfit121.maxProfitII(new int[]{7, 1, 5, 3, 6, 4});
+        int i = maxProfit121.maxProfit(new int[]{7, 1, 5, 3, 6, 4});
         System.out.println(i);
     }
 }
